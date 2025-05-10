@@ -1,0 +1,19 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "Your task is to implement simple CRUD API using in-memory database underneath.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikoroleva/crud-api.git"
+  },
+  "author": "Irina Koroleva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikoroleva/crud-api/issues"
+  },
+  "homepage": "https://github.com/ikoroleva/crud-api#readme"
+}
