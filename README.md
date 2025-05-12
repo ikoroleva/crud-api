@@ -1,9 +1,5 @@
 # Node.js CRUD API
 
-## Description
-
-Your task is to implement simple CRUD API using in-memory database underneath.
-
 ## Installation
 
 1. Clone the repository
@@ -19,7 +15,7 @@ Your task is to implement simple CRUD API using in-memory database underneath.
 3. Check out the development branch
 
    ```bash
-   git checkout develop
+   git checkout development
    ```
 4. Install the dependencies
 
@@ -45,7 +41,6 @@ The base endpoint will then be available at `http://localhost:<PORT>/api/users`.
 | --------------------- | ------------------------------------------------------------------------ |
 | `npm run start:dev`   | Launch the server in development mode with automatic reload.             |
 | `npm run start:prod`  | Build the project and run the compiled output.                           |
-| `npm run start:multi` | Start the built‑in load balancer together with several worker processes. |
 
 ## Running tests
 
