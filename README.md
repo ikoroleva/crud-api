@@ -1,10 +1,56 @@
-# [Course program module (for RS School students)](https://github.com/rolling-scopes-school/tasks/blob/master/node/modules/crud-api/README.md)
+# Node.js CRUD API
 
-# Assignment: CRUD API
+## Installation
 
-## Description
+1. Clone the repository
 
-Your task is to implement simple CRUD API using in-memory database underneath.
+   ```bash
+   git clone https://github.com/ikoroleva/crud-api.git
+   ```
+2. Move into the project directory
+
+   ```bash
+   cd crud-api
+   ```
+3. Check out the development branch
+
+   ```bash
+   git checkout development
+   ```
+4. Install the dependencies
+
+   ```bash
+   npm install
+   ```
+
+## Configuration
+
+The service listens on port `4000` by default.
+
+To switch to another port create a `.env` file in the project root and add, for example:
+
+```
+PORT=5000
+```
+
+The base endpoint will then be available at `http://localhost:<PORT>/api/users`.
+
+## Running the application
+
+| Command               | Purpose                                                                  |
+| --------------------- | ------------------------------------------------------------------------ |
+| `npm run start:dev`   | Launch the server in development mode with automatic reload.             |
+| `npm run start:prod`  | Build the project and run the compiled output.                           |
+
+## Running tests
+
+Execute
+
+```bash
+npm run test
+```
+
+to run the bundled unit/integration tests.
 
 ## Technical requirements
 
