@@ -1,18 +1,22 @@
 import { IncomingMessage, ServerResponse } from 'node:http';
 import { usersRouter } from '../routes/users-router';
+import { errorHandler } from './errorHandler';
 
 export async function requestListener(
   req: IncomingMessage,
-  res: ServerResponse
+  res: ServerResponse,
 ) {
   try {
     const url = req.url ?? '/';
-    const [_, api, resource, id] = url.split('/');
+    const [, api, resource, id] = url.split('/');
+
     if (api === 'api' && resource === 'users') {
-      return usersRouter(req, res, id ?? null);
+      await usersRouter(req, res, id ?? null);
+      return;
     }
+
     res.writeHead(404).end('Route not found');
   } catch (err) {
-    console.error(err);
+    errorHandler(res, err);
   }
 }
